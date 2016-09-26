@@ -10,13 +10,16 @@ package entidad;
  * @author programacion
  */
 public class Libro {
-    private int cod;
+    private String cod;
     private String titulo;
     private String autor;
     private int nejemplares;
     private int eprestados;
 
-    public Libro(int cod, String titulo, String autor, int nejemplares, int eprestados) {
+    public Libro() {
+    }
+    
+    public Libro(String cod, String titulo, String autor, int nejemplares, int eprestados) {
         this.cod = cod;
         this.titulo = titulo;
         this.autor = autor;
@@ -24,11 +27,11 @@ public class Libro {
         this.eprestados = eprestados;
     }
 
-    public int getCod() {
+    public String getCod() {
         return cod;
     }
 
-    public void setCod(int cod) {
+    public void setCod(String cod) {
         this.cod = cod;
     }
 
